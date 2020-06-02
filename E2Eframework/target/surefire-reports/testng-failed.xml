@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="Shraddha.E2Eframework.Listeners"/>
+  </listeners>
+  <test name="Validate login details(failed)" parallel="tests">
+    <classes>
+      <class name="Shraddha.E2Eframework.HomePage">
+        <methods>
+          <include name="basePageNavigation" invocation-numbers="0 1"/>
+          <include name="initialization"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- Shraddha.E2Eframework.HomePage -->
+      <class name="Shraddha.E2Eframework.Validating">
+        <methods>
+          <include name="initialization"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- Shraddha.E2Eframework.Validating -->
+    </classes>
+  </test> <!-- Validate login details(failed) -->
+</suite> <!-- Failed suite [Suite] -->
